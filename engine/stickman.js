@@ -324,7 +324,7 @@ export function buildFigure(pose, face, o) {
   if (F.blush) for (const s of [-1, 1]) st.push(S.poly([fx(look + s * 10 - 2, 4), fx(look + s * 10 + 2, 3)], { w: 1.6 * scale, color: 'pink', part: 'face' }));
   // optional accessory (keeps the cast distinguishable with lines only)
   if (accessory) st.push(...accessoryStrokes(accessory, fx, dir, scale));
-  return { strokes: st, joints: W, scale };
+  return { strokes: o.noFace ? st.filter(x => x.part !== 'face') : st, joints: W, scale };
 }
 function accessoryStrokes(a, fx, dir, scale) {
   const c = typeof a === 'object' ? a.color : undefined; const k = typeof a === 'object' ? a.type : a;

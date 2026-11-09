@@ -16,6 +16,7 @@ description: "把主題、文章或腳本做成「純程式繪製」的線條火
 | `engine/stickman.js` | 引擎（零依賴，瀏覽器／Node 共用）：骨架、姿勢庫、表情庫、動作、道具、鏡頭、轉場、字幕 |
 | `render.mjs` | Node 算圖 → MP4（ffmpeg），也能出單張或分鏡總覽圖 |
 | `tools/build-player.mjs` | 產生單檔 HTML 預覽播放器（拖曳時間軸、瀏覽器錄 WebM） |
+| `tools/character-sheet.mjs` | 匯出角色設定圖（頭像／正面／側面／背面＋表情），可當 AI 生圖的參考圖（例如 handraw-style 角色庫） |
 | `tools/gallery.mjs` | 重新產生 `references/poses.png`、`faces.png` |
 | `references/scene-format.md` | **場景 JSON 完整規格**（撰寫前必讀） |
 | `references/directing.md` | 導演方法：如何把內容拆成鏡頭、表演與節奏 |
