@@ -1,0 +1,19 @@
+{
+  "name": "stickman-code-video",
+  "version": "1.0.0",
+  "description": "Pure-code line-art stickman animation skill",
+  "main": "engine/stickman.js",
+  "scripts": {
+    "demo": "node render.mjs examples/ai-workflow.scene.json -o demo.mp4",
+    "gallery": "node tools/gallery.mjs",
+    "preview": "node tools/build-player.mjs examples/ai-workflow.scene.json -o examples/preview.html"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@napi-rs/canvas": "^1.1.0"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
+}
